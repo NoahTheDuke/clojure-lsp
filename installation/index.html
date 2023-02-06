@@ -11,7 +11,7 @@
       
       
       
-        <link rel="canonical" href="https://clojure-lsp.github.io/clojure-lsp/installation/">
+        <link rel="canonical" href="https://clojure-lsp.io/installation/">
       
       <link rel="shortcut icon" href="../images/logo-light.svg">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
@@ -81,7 +81,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://clojure-lsp.github.io/clojure-lsp" title="Clojure LSP" class="md-header-nav__button md-logo" aria-label="Clojure LSP">
+    <a href="https://clojure-lsp.io" title="Clojure LSP" class="md-header-nav__button md-logo" aria-label="Clojure LSP">
       
   <img src="../images/logo-light.svg" alt="logo">
 
@@ -209,11 +209,15 @@
   
 
 
-  <li class="md-tabs__item">
-    <a href="../api/" class="md-tabs__link">
-      API
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../api/what-is-it/" class="md-tabs__link">
+        Outside editor (API)
+      </a>
+    </li>
+  
 
       
         
@@ -262,7 +266,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://clojure-lsp.github.io/clojure-lsp" title="Clojure LSP" class="md-nav__button md-logo" aria-label="Clojure LSP">
+    <a href="https://clojure-lsp.io" title="Clojure LSP" class="md-nav__button md-logo" aria-label="Clojure LSP">
       
   <img src="../images/logo-light.svg" alt="logo">
 
@@ -530,10 +534,104 @@
 
 
 
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
+    <label class="md-nav__link" for="nav-4">
+      Outside editor (API)
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Outside editor (API)" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Outside editor (API)
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
   <li class="md-nav__item">
-    <a href="../api/" class="md-nav__link">
-      API
+    <a href="../api/what-is-it/" class="md-nav__link">
+      What is clojure-lsp API?
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../api/api/" class="md-nav__link">
+      API (JVM)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../api/cli/" class="md-nav__link">
+      CLI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../api/ci/" class="md-nav__link">
+      CI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../api/lein-plugin/" class="md-nav__link">
+      Lein plugin
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../api/bb-pod/" class="md-nav__link">
+      Babashka pod
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -667,18 +765,33 @@
                 
                 
                 <h1 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h1>
-<p>Below are all available <code>clojure-lsp</code> installation methods, after installed, follow the documentation for your editor's language client. See <a href="//clojure-lsp.github.io/clojure-lsp/clients">Clients</a>.</p>
+<p>Below are all available <code>clojure-lsp</code> installation methods, after installed, follow the documentation for your editor's language client. See <a href="../clients/">Clients</a>.</p>
 <h2 id="homebrew-macos-and-linux">Homebrew (MacOS and Linux)<a class="headerlink" href="#homebrew-macos-and-linux" title="Permanent link">#</a></h2>
 <p>We have a custom tap using the native compiled binaries for users that use homebrew:</p>
 <div class="highlight"><pre><span></span><code>brew remove clojure-lsp <span class="c1"># if you have old clojure-lsp installed via brew</span>
 brew install clojure-lsp/brew/clojure-lsp-native
 </code></pre></div>
 <h2 id="script">Script<a class="headerlink" href="#script" title="Permanent link">#</a></h2>
+<p>Stable release:</p>
 <div class="highlight"><pre><span></span><code>sudo bash &lt; &lt;<span class="o">(</span>curl -s https://raw.githubusercontent.com/clojure-lsp/clojure-lsp/master/install<span class="o">)</span>
+</code></pre></div>
+<p>nightly build:</p>
+<div class="highlight"><pre><span></span><code>curl -O https://raw.githubusercontent.com/clojure-lsp/clojure-lsp/master/install
+chmod a+x install
+sudo ./install --version nightly
 </code></pre></div>
 <h2 id="nix">Nix<a class="headerlink" href="#nix" title="Permanent link">#</a></h2>
 <p><code>clojure-lsp</code> is available in the <a href="https://github.com/NixOS/nixpkgs/blob/master/pkgs/development/tools/misc/clojure-lsp/default.nix">nixpkgs</a>:</p>
 <div class="highlight"><pre><span></span><code>nix-shell -p clojure-lsp
+</code></pre></div>
+<p>or if using flakes:</p>
+<div class="highlight"><pre><span></span><code>nix run github:clojure-lsp/clojure-lsp
+<span class="c1"># or</span>
+nix shell github:clojure-lsp/clojure-lsp
+</code></pre></div>
+<p>or consume the flake overlay:</p>
+<div class="highlight"><pre><span></span><code>inputs<span class="o">.</span>clojure-lsp<span class="o">.</span><span class="ss">url =</span> <span class="s2">&quot;github:clojure-lsp/clojure-lsp&quot;</span><span class="p">;</span>
+nixpkgs<span class="o">.</span><span class="ss">overlays =</span> <span class="p">[</span> inputs<span class="o">.</span>clojure-lsp<span class="o">.</span>overlays<span class="o">.</span>default <span class="p">];</span>
 </code></pre></div>
 <h2 id="arch-linux">Arch Linux<a class="headerlink" href="#arch-linux" title="Permanent link">#</a></h2>
 <p><code>clojure-lsp</code> is
@@ -711,7 +824,7 @@ brew install clojure-lsp/brew/clojure-lsp-native
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 31, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 4, 2023</span>
     
   </small>
 </div>
@@ -749,13 +862,13 @@ brew install clojure-lsp/brew/clojure-lsp-native
           </a>
         
         
-          <a href="../api/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../api/what-is-it/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                API
+                What is clojure-lsp API?
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

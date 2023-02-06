@@ -11,7 +11,7 @@
       
       
       
-        <link rel="canonical" href="https://clojure-lsp.github.io/clojure-lsp/clients/">
+        <link rel="canonical" href="https://clojure-lsp.io/clients/">
       
       <link rel="shortcut icon" href="../images/logo-light.svg">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
@@ -81,7 +81,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://clojure-lsp.github.io/clojure-lsp" title="Clojure LSP" class="md-header-nav__button md-logo" aria-label="Clojure LSP">
+    <a href="https://clojure-lsp.io" title="Clojure LSP" class="md-header-nav__button md-logo" aria-label="Clojure LSP">
       
   <img src="../images/logo-light.svg" alt="logo">
 
@@ -209,11 +209,15 @@
   
 
 
-  <li class="md-tabs__item">
-    <a href="../api/" class="md-tabs__link">
-      API
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../api/what-is-it/" class="md-tabs__link">
+        Outside editor (API)
+      </a>
+    </li>
+  
 
       
         
@@ -262,7 +266,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://clojure-lsp.github.io/clojure-lsp" title="Clojure LSP" class="md-nav__button md-logo" aria-label="Clojure LSP">
+    <a href="https://clojure-lsp.io" title="Clojure LSP" class="md-nav__button md-logo" aria-label="Clojure LSP">
       
   <img src="../images/logo-light.svg" alt="logo">
 
@@ -393,6 +397,19 @@
     Vim
   </a>
   
+    <nav class="md-nav" aria-label="Vim">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nvim" class="md-nav__link">
+    Nvim
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -519,10 +536,104 @@
 
 
 
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
+    <label class="md-nav__link" for="nav-4">
+      Outside editor (API)
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Outside editor (API)" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Outside editor (API)
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
   <li class="md-nav__item">
-    <a href="../api/" class="md-nav__link">
-      API
+    <a href="../api/what-is-it/" class="md-nav__link">
+      What is clojure-lsp API?
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../api/api/" class="md-nav__link">
+      API (JVM)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../api/cli/" class="md-nav__link">
+      CLI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../api/ci/" class="md-nav__link">
+      CI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../api/lein-plugin/" class="md-nav__link">
+      Lein plugin
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../api/bb-pod/" class="md-nav__link">
+      Babashka pod
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -594,6 +705,19 @@
   <a href="#vim" class="md-nav__link">
     Vim
   </a>
+  
+    <nav class="md-nav" aria-label="Vim">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nvim" class="md-nav__link">
+    Nvim
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -727,6 +851,9 @@ xmap &lt;silent&gt; &lt;Leader&gt;c             &lt;Plug&gt;(coc-codeaction-sele
 nmap &lt;silent&gt; &lt;Leader&gt;c             &lt;Plug&gt;(coc-codeaction-line)
 nmap &lt;silent&gt; gd                    &lt;Plug&gt;(coc-definition)
 </code></pre></div>
+<h3 id="nvim">Nvim<a class="headerlink" href="#nvim" title="Permanent link">#</a></h3>
+<p>An very detailed document about how configure Nvim as Clojure IDE using fennel, clojure-lsp and conjure.<br />
+<a href="https://github.com/rafaeldelboni/nvim-fennel-lsp-conjure-as-clojure-ide">nvim-fennel-lsp-conjure-as-clojure-ide</a></p>
 <hr />
 <h2 id="sublime-text">Sublime Text<a class="headerlink" href="#sublime-text" title="Permanent link">#</a></h2>
 <p>Clojure LSP can be installed by first installing the <a href="https://packagecontrol.io/packages/LSP">LSP plugin</a> which brings Language Server Protocol support to Sublime Text editor and then following the set-up instructions <a href="https://lsp.sublimetext.io/language_servers/#clojure">here</a> to download Clojure LSP and how to configure it in Sublime Text.</p>
@@ -753,7 +880,7 @@ nmap &lt;silent&gt; gd                    &lt;Plug&gt;(coc-definition)
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 31, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 4, 2023</span>
     
   </small>
 </div>
